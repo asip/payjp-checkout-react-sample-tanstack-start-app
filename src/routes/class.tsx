@@ -1,4 +1,5 @@
 import PayjpCheckout from '@/components/class/payjp-checkout'
+import type { PayjpCheckoutErrorPayload, PayjpCheckoutPayload } from '@/components/class/payjp-checkout'
 
 import { createFileRoute, Link } from '@tanstack/react-router'
 
@@ -16,12 +17,12 @@ function Class() {
     onFailedHandler: onFailed,
   }
 
-  function onCreated(payload: any) {
+  function onCreated(payload: PayjpCheckoutPayload) {
     //console.log(payload)
     console.log(payload.token)
   }
 
-  function onFailed(payload: any) {
+  function onFailed(payload: PayjpCheckoutErrorPayload) {
     console.log(payload.message)
   }
 
