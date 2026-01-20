@@ -1,7 +1,7 @@
 import PayjpCheckout from '@/components/func/payjp-checkout'
 import type { PayjpCheckoutErrorPayload, PayjpCheckoutPayload } from '@/components/func/payjp-checkout'
 
-import { createFileRoute, Link } from '@tanstack/react-router'
+import { createFileRoute } from '@tanstack/react-router'
 
 
 export const Route = createFileRoute('/')({ component: Func })
@@ -30,7 +30,7 @@ function Func() {
     <div className="payjpButtonArea">
       <div>function component</div>
       <PayjpCheckout {...payjpCheckoutProps} />
-      <div><Link to="/class" className="underline">class component</Link></div>
+      {/* <div><Link to="/class" className="underline">class component</Link></div> */}
       {/* <div><a href="/class" class="underline">class component</a></div> */}
     </div>
   )

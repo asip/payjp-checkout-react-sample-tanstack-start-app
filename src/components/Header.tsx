@@ -25,11 +25,7 @@ export default function Header() {
         </button>
         <h1 className="ml-4 text-xl font-semibold">
           <Link to="/">
-            <img
-              src="/tanstack-word-logo-white.svg"
-              alt="TanStack Logo"
-              className="h-10"
-            />
+            <div className="flex items-center h-10">Pay.jp Checkout</div>
           </Link>
         </h1>
       </header>
@@ -80,19 +76,6 @@ export default function Header() {
           >
             <SquareFunction size={20} />
             <span className="font-medium">Payjp Checkout - Function</span>
-          </Link>
-
-          <Link
-            to="/class"
-            onClick={() => setIsOpen(false)}
-            className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-800 transition-colors mb-2"
-            activeProps={{
-              className:
-                'flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2',
-            }}
-          >
-            <Network size={20} />
-            <span className="font-medium">Payjp Checkout - Class</span>
           </Link>
 
           {/* Component Links End */}
