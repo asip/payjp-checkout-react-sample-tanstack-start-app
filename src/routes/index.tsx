@@ -4,9 +4,9 @@ import type { PayjpCheckoutErrorPayload, PayjpCheckoutPayload } from '@/componen
 import { createFileRoute, Link } from '@tanstack/react-router'
 
 
-export const Route = createFileRoute('/')({ component: App })
+export const Route = createFileRoute('/')({ component: Func })
 
-function App() {
+function Func() {
   const key = import.meta.env.VITE_PAYJP_PUBLIC_KEY
 
   const payjpCheckoutProps = {
@@ -29,9 +29,9 @@ function App() {
   return (
     <div className="payjpButtonArea">
       <div>function component</div>
-      <div><Link to="/class" className="underline">class component</Link></div>
-      {/* <div><a href="/">class component</a></div> */}
       <PayjpCheckout {...payjpCheckoutProps} />
+      <div><Link to="/class" className="underline">class component</Link></div>
+      {/* <div><a href="/class" class="underline">class component</a></div> */}
     </div>
   )
 }

@@ -29,9 +29,9 @@ function Class() {
   return (
     <div className="payjpButtonArea">
       <div>class component</div>
-      <div><Link to="/" className="underline">function component</Link></div>
-      {/* <div><a href="/">class component</a></div> */}
       <PayjpCheckout {...payjpCheckoutProps} />
+      <div><Link to="/" className="underline">function component</Link></div>
+      {/* <div><a href="/" class="underline">function component</a></div> */}
     </div>
   )
 }
