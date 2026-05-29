@@ -1,5 +1,5 @@
 import PayjpCheckout from '@/components/func/payjp-checkout'
-import type { PayjpCheckoutErrorPayload, PayjpCheckoutPayload } from '@/components/func/payjp-checkout'
+import type { PayjpCheckoutErrorPayload, PayjpCheckoutPayload } from '@/types'
 
 import { createFileRoute } from '@tanstack/react-router'
 
